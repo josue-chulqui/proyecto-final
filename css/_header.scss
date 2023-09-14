@@ -1,0 +1,46 @@
+.header{
+  
+    display: flex;
+    align-items: auto;
+    justify-content: space-between;
+    background-color: rgb(250, 80, 1);
+    flex-wrap: wrap;
+    padding: 2rem;
+    
+  }
+  .navbar ul{
+    text-decoration: none;
+    justify-content: space-between;
+    display: flex;
+    justify-content: flex-end
+  }
+  .navbar ul li{
+    justify-content: space-between;
+    display: flex;
+  }
+  .navbar ul li a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 35px;
+    margin-left: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 20px;
+    
+  }
+  .navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+  }
+  
+  
+    /*logo*/
+  
+  
+     .logo img{
+      width: 90px;
+    }

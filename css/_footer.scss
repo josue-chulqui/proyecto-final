@@ -1,0 +1,19 @@
+ /*footer*/
+ .pie{
+    align-items: center;
+    background-color: rgb(250, 80, 1);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+    
+  }
+  .pie p{
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .pie img{
+    width:60px;
+    height: 100%;
+    object-fit: cover;
+  }
