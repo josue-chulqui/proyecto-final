@@ -6,28 +6,50 @@
     <meta name="keywrds" content="datos,servicios,contacto">
     <meta name="description" content="en esta seccion vas a entontrar informacion sobre mi vida y como llegue a tomar la desicion de estudiar">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>Sobre mi</title>
 </head>
 <body>
     
-        <header class="header">
-            <!--Logo-->
-               <div class="logo">
-                <img src="../Recursos/logo/logo.png" alt="logo">
-              </div>
-               <!--Menu de navegación-->
-               <nav class="navbar">
-                  <!--Lista no ordenada-->
-                  <ul>
-                      <li><a href="../index.html">Inicio</a></li>
-                      <li><a href="./Blog.html">Blog</a></li>
-                      <li><a href="./SobreMi.html">Sobre Mi</a></li>
-                      <li><a href="./Contacto.html">Contacto</a></li>
-                      <li><a href="../Secciones/galeria.html">Galeria</a></li>
+       <!-- inicio encabezado -->
+    <header>
+        <div class="logo">
+           <a href="../index.html">
+              <img src="../Recursos/logo/logo.png" alt="logo">
+           </a>
+        </div>
+           <!--Menu de navegación-->
+          
+           <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+  
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../Secciones/Blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../Secciones/SobreMi.html">Acerca de Mi</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="../Secciones/precios.html">Precios</a>
+                     </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="../Secciones/Contacto.html">Contacto</a>
+                     </li>
                   </ul>
-               </nav>
-
-           </header>
+                </div>
+              </div>
+            </nav>
+       </header>
+  
 
            <h1>Hola! soy Josue y quiero ser Programador</h1>
 
@@ -60,5 +82,6 @@
              </div>
 
            </footer>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

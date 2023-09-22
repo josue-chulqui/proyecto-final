@@ -6,52 +6,21 @@
 }
 
 body {
-  background-color: rgba(112, 126, 126, 0.671);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(36, 36, 98) 7%, rgb(0, 212, 255) 100%);
 }
 
-.header {
-  display: flex;
-  align-items: auto;
-  justify-content: space-between;
-  background-color: rgb(250, 80, 1);
-  flex-wrap: wrap;
-  padding: 2rem;
+.logo {
+  padding-right: 10rem;
+  margin: 2rem;
 }
 
-.navbar ul {
-  text-decoration: none;
-  justify-content: space-between;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.navbar ul li {
-  justify-content: space-between;
-  display: flex;
-}
-
-.navbar ul li a {
-  font-size: 20px;
-  color: #000000;
-  text-decoration: none;
-  font-weight: 35px;
-  margin-left: 35px;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-right: 20px;
-}
-
-.navbar ul li a:hover {
-  background-color: black;
-  color: white;
-  border-radius: 5px;
-  width: 100px;
-  text-align: center;
-}
-
-/*logo*/
 .logo img {
-  width: 90px;
+  width: 3rem;
+}
+
+.logo img:hover {
+  transform: rotate(-10deg);
 }
 
 /*main*/
@@ -61,42 +30,69 @@ h1 {
   margin-top: 40px;
 }
 
-.grid img {
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.main-padre {
+  background-color: rgb(255, 255, 255);
+}
+
+.main img {
   width: 100%;
   height: 100%;
+  max-width: 500px;
   object-fit: cover;
 }
 
 h3 {
   text-align: center;
-  color: rgba(248, 252, 255, 0.493);
+  color: rgba(21, 22, 22, 0.493);
 }
 
-.grid p {
+.main p {
   text-align: center;
-  color: rgb(136, 140, 145);
+  color: rgb(2, 8, 15);
   font-size: 20px;
   padding: 20px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 100%;
+}
+
+#galeria col-lg-4:hover {
+  transform: scale(1);
 }
 
 /*footer*/
 .pie {
   align-items: center;
-  background-color: rgb(250, 80, 1);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(36, 36, 98) 7%, rgb(0, 212, 255) 100%);
   display: flex;
   justify-content: center;
   padding: 30px;
+  transition: all;
 }
 
 .pie p {
   margin-left: 40px;
   font-size: 15px;
+  color: rgb(255, 255, 255);
 }
 
 .pie img {
   width: 60px;
   height: 100%;
   object-fit: cover;
+}
+
+.pie img:hover {
+  transform: rotate(-10deg);
 }
 
 /*css de contacto*/
@@ -123,29 +119,10 @@ h3 {
     padding: 0;
   }
   body {
-    background-color: rgb(67, 68, 68);
+    background-color: rgb(255, 255, 255);
   }
   h1 {
     text-align: center;
-  }
-  .header {
-    background-color: rgb(250, 80, 1);
-  }
-  .navbar {
-    margin: auto;
-  }
-  .navbar ul {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar ul li {
-    background-color: black;
-    border-radius: 5px;
-    margin-top: 3px;
-  }
-  .navbar ul li a {
-    color: aliceblue;
   }
   .grid {
     width: 100%;

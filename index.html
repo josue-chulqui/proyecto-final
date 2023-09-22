@@ -6,71 +6,76 @@
     <meta name="keywords" content=" portafolio,programador,estudiante">
     <meta name="description" content="en esta pagina vas a encontrar datos de mi persona y tecnologias">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <title>PORFOLIO</title>
  </head>
    <body>
-     <header class="header">
-      <!--Logo-->
-          <div class="logo">
-            <img src="./Recursos/logo/logo.png" alt="logo">
-         </div>
+     <header>
+      
          <!--Menu de navegación-->
-         <nav class="navbar">
-            <!--Lista no ordenada-->
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./Secciones/Blog.html">Blog</a></li>
-                <li><a href="./Secciones/SobreMi.html">Sobre Mi</a></li>
-                <li><a href="./Secciones/Contacto.html">Contacto</a></li>
-                <li><a href="./Secciones/galeria.html">Galeria</a></li>
-            </ul>
-         </nav>
+        
+         <nav class="navbar navbar-expand-lg bg-opacity-10">
+            <div class="container-fluid">
+                <div class="logo">
+                <a href="./index.html">
+                  <img src="./Recursos/logo/logo-dev.png" alt="logo">
+                </a>
+                </div>
+             
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="./Secciones/Blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="./Secciones/SobreMi.html">Acerca de Mi</a>
+                  </li>
+                  <li class="nav-item text-light">
+                     <a class="nav-link text-light" href="./Secciones/precios.html">Precios</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link text-light" href="./Secciones/Contacto.html">Contacto</a>
+                   </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
      </header>
 
 
      <!--contenido principal-->
 
+     <main class="main-padre">
 
-     <h1>Hola! Soy Josue Chulqui</h1>
+      <h1>Hola! Soy Josue Chulqui</h1>
 
-     <main class="grilla">
-
-      <div class="grid">
+      <div class="main">
         <h3>Como desarrollador web, mi día a día está lleno de creatividad y desafíos técnicos emocionantes. Desde el momento en que me siento frente a mi computadora por la mañana, sé que estaré inmerso en un mundo de código y diseño que da vida a sitios web sorprendentes.
         </h3>
-      </div>
-
-      <div class="grid">
          <img src="./Recursos/img/imgdeprogramador.jpg" alt="imagen-de-notebook">
         </div>
 
-      <div class="grid">
+      <div class="main">
          <h3>
          Una de mis tareas habituales es trabajar en el front-end, donde traduzco diseños y conceptos en código HTML, CSS y JavaScript. Me aseguro de que los elementos de la página se vean y funcionen perfectamente en todos los dispositivos, desde teléfonos móviles hasta pantallas grandes de escritorio. La atención a los detalles es clave aquí, ya que pequeños ajustes pueden marcar una gran diferencia en la experiencia del usuario.
          </h3>
-      </div>
-         
-      <div class="grid">
          <img src="./Recursos/img/imgdenootebok.jpg" alt="">
       </div>
 
-      <div class="grid">
+      <div class="main">
          <h3>
          Pero mi trabajo no se limita solo a la parte visual. También colaboro con el equipo de back-end para conectar la interfaz de usuario con la lógica y la funcionalidad detrás de escena. Trabajo con bases de datos, APIs y servidores para asegurarme de que todo funcione sin problemas y de manera eficiente.
          
          Un aspecto que realmente disfruto es la resolución de problemas. A veces, enfrento desafíos técnicos que requieren investigar, experimentar y encontrar soluciones creativas. Esto puede ser un proceso desafiante, pero es increíblemente gratificante cuando finalmente encuentro la solución y veo cómo todo encaja.
          </h3>
-      </div>
-         
-      <div class="grid">
-         <h3>
-         La colaboración es una parte esencial de mi trabajo. Ya sea interactuando con diseñadores para comprender su visión, o trabajando codo a codo con otros desarrolladores para integrar diferentes componentes, siempre estoy en constante comunicación.
-         
-         Mantenerme actualizado con las últimas tecnologías es fundamental. La industria web avanza rápidamente, por lo que dedico tiempo a aprender nuevas bibliotecas, frameworks y herramientas que pueden mejorar mi eficiencia y la calidad de mi trabajo.
-         
-         </h3>
-      </div>
- 
+        </div>
     </main>
 
 
@@ -85,5 +90,6 @@
       <p>2023 ©copyright</p>
    </div>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
    </body>
 </html>
