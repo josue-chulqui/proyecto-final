@@ -1,18 +1,43 @@
 /*css de contacto*/
-.container-formulario formulario h1{
+  
+.form-padre{
+  background-image:url("/Recursos/img/city.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  padding: 3rem;
+}
+  .form-hijo{
+    padding:auto;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgb(150, 146, 146);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
 
-    text-align: center;
   }
-  .container-formulario{
-    padding-left: 485px;
-
-  }
-
-  .formulario{
-    display: flex;
-    flex-direction: column;
-    width:850px;
-    padding: 80px;
-    margin: 50px;
+  .form-hijo form{
+    padding: auto;
+    margin: 2rem;
     
+  }
+  .form-hijo form label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: rgb(61, 59, 59);
+    font-weight: 500;
+    pointer-events: none;
+  }
+  .form-hijo h1{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
   }

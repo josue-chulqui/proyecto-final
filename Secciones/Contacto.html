@@ -14,16 +14,16 @@
 <body>
     <!-- inicio encabezado -->
     <header>
-        <div class="logo">
-           <a href="../index.html">
-              <img src="../Recursos/logo/logo.png" alt="logo">
-           </a>
-        </div>
+
            <!--Menu de navegación-->
           
-           <nav class="navbar navbar-expand-lg bg-body-tertiary">
+           <nav class="navbar navbar-expand-lg">
               <div class="container-fluid">
-                
+                <div class="logo">
+                  <a href="../index.html">
+                    <img src="../Recursos/logo/logo-dev.png" alt="logo">
+                  </a>
+                  </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,19 +31,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../Secciones/Blog.html">Blog</a>
+                      <a class="nav-link text-light" href="../Secciones/Blog.html">Blog</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="../Secciones/SobreMi.html">Acerca de Mi</a>
+                      <a class="nav-link text-light" href="../Secciones/SobreMi.html">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
-                       <a class="nav-link" href="../Secciones/precios.html">Precios</a>
+                       <a class="nav-link text-light" href="../Secciones/precios.html">Precios</a>
                      </li>
                      <li class="nav-item">
-                       <a class="nav-link" href="../Secciones/Contacto.html">Contacto</a>
+                       <a class="nav-link text-light" href="../Secciones/Contacto.html">Contacto</a>
                      </li>
                   </ul>
                 </div>
@@ -51,16 +51,14 @@
             </nav>
        </header>
   
-    
-
-    <!-- Contenido Principal -->
-    <section>
-        <article class="container-formulario">
-            <!-- encabezado form -->
-            <h1>Contacto</h1>
-            
-            <!-- inicio form -->
-            <form action="form.php" method="POST" class="formulario">
+                       <!-- Contenido Principal -->
+    <main class="form-padre">
+                          <!-- encabezado form -->
+            <div class="form-hijo">                         
+             
+              <h1>Contacto</h1>  
+                            <!-- inicio form -->           
+              <form action="form.php" method="POST" class="formulario">
                     <label for="name">Nombre</label>
                     <input type="text" name="name" id="name"placeholder="Nombre"><br>
 
@@ -75,11 +73,12 @@
 
                     <input class="btn" type="submit" value="Enviar">
                 
-            </form>
-            <!-- cierre form -->
-        </article>
-    </section>
-   
+              </form>
+            
+             </div>
+            </main>
+    
+                              <!-- cierre form -->
     <footer>
         <div class="pie">
 
