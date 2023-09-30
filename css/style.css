@@ -66,11 +66,14 @@ h1 {
   border-radius: 10px;
 }
 
-.img-josue img {
+.img-josue {
   width: 100%;
+}
+
+.img-josue img {
   width: 20rem;
   border-radius: 10px;
-  text-align: center;
+  padding-left: 5rem;
 }
 
 .main-precio {
