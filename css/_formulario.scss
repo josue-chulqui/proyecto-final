@@ -8,36 +8,53 @@
   padding: 3rem;
 }
   .form-hijo{
-    padding:auto;
+    position: relative;
     margin: auto;
     margin-top: 100px;
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 450px;
+    height: 530px;
     background: transparent;
     border: 2px solid rgb(150, 146, 146);
-    border-radius: 20px;
+    border-radius: 1rem;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgb(0, 0, 0);
 
   }
-  .form-hijo form{
-    padding: auto;
-    margin: 2rem;
-    
+  .form-hijo label{
+    width: 80%;
+    background-color: antiquewhite;
+    text-align: center;
   }
-  .form-hijo form label{
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    font-size: 1rem;
-    color: rgb(61, 59, 59);
-    font-weight: 500;
-    pointer-events: none;
+ 
+  .form-hijo input{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 5px;
+    border-radius: 1rem;
+    text-align: center;
   }
+  .form-hijo textarea{
+    width: 100%;
+    height: 7rem;
+    text-align: center;
+    border-radius: 1rem;
+  }
+  .form-hijo button{
+    border-radius: 1rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1rem;
+    background-color: rgb(0, 0, 0);
+    font-weight:900;
+    color: beige;
+    align-items: center;
+  }
+  
   .form-hijo h1{
     font-size: 2rem;
-    color: black;
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-weight: 700;
+    animation:jello-horizontal .9s linear both} @keyframes jello-horizontal{0%{transform:scale3d(1,1,1)}30%{transform:scale3d(1.25,.75,1)}40%{transform:scale3d(.75,1.25,1)}50%{transform:scale3d(1.15,.85,1)}65%{transform:scale3d(.95,1.05,1)}75%{transform:scale3d(1.05,.95,1)}100%{transform:scale3d(1,1,1)}
   }

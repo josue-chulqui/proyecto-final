@@ -29,28 +29,41 @@ h1 {
   text-align: center;
   color: rgba(2, 2, 2, 0.493);
   margin-top: 40px;
+  font-weight: 900;
+  animation: tracking-in-contract 0.8s linear both;
 }
 
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 0.6em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
 .main-padre {
+  width: 100%;
   height: 100hv;
 }
 
 .main {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin: 2rem;
 }
 
 .main img {
-  width: 100%;
+  width: 700px;
   height: 100%;
+  margin-top: 5rem;
   object-fit: cover;
-  width: 30rem;
-  border-radius: 5px;
-}
-
-.img-josue:hover {
-  transform: scale(1.1);
+  border-radius: 10px;
 }
 
 .img-josue img {
@@ -62,6 +75,7 @@ h1 {
 
 h3 {
   text-align: center;
+  width: 800px;
   color: rgba(21, 22, 22, 0.493);
 }
 
@@ -69,7 +83,8 @@ h3 {
   text-align: center;
   color: rgb(2, 8, 15);
   font-size: 20px;
-  padding: 20px;
+  margin-top: 5rem;
+  width: 800px;
 }
 
 /*footer*/
@@ -110,60 +125,147 @@ h3 {
 }
 
 .form-hijo {
-  padding: auto;
+  position: relative;
   margin: auto;
   margin-top: 100px;
   position: relative;
-  width: 400px;
-  height: 500px;
+  width: 450px;
+  height: 530px;
   background: transparent;
   border: 2px solid rgb(150, 146, 146);
-  border-radius: 20px;
+  border-radius: 1rem;
   backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgb(0, 0, 0);
 }
 
-.form-hijo form {
-  padding: auto;
-  margin: 2rem;
+.form-hijo label {
+  width: 80%;
+  background-color: antiquewhite;
+  text-align: center;
 }
 
-.form-hijo form label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  transform: translateY(-50%);
-  font-size: 1rem;
-  color: rgb(61, 59, 59);
-  font-weight: 500;
-  pointer-events: none;
+.form-hijo input {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 5px;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.form-hijo textarea {
+  width: 100%;
+  height: 7rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.form-hijo button {
+  border-radius: 1rem;
+  width: 100%;
+  height: 4rem;
+  margin-top: 1rem;
+  background-color: rgb(0, 0, 0);
+  font-weight: 900;
+  color: beige;
+  align-items: center;
 }
 
 .form-hijo h1 {
   font-size: 2rem;
-  color: black;
+  color: rgb(0, 0, 0);
   text-align: center;
+  font-weight: 700;
+  animation: jello-horizontal 0.9s linear both;
 }
 
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
 /* movile last = celulares a lo ultimo*/
-@media (max-width: 550px) {
+@media (max-width: 552px) {
   * {
     margin: 0;
     padding: 0;
   }
   body {
     background-color: rgb(255, 255, 255);
+    width: 100vw;
   }
   h1 {
     text-align: center;
+    width: 100vw;
+  }
+  .header {
+    width: 100vw;
+  }
+  .logo {
+    margin: 1rem;
+  }
+  .main-padre {
+    width: 100vw;
   }
   .main {
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
   }
-  .container-formulario {
-    padding: auto;
+  .main img {
+    width: 350px;
+    height: 100%;
+    margin-top: 2rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .main p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 200px;
+  }
+  h3 {
+    text-align: center;
+    width: 350px;
+    color: rgba(21, 22, 22, 0.493);
+  }
+  .form-padre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/Recursos/img/city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    width: 100vw;
+  }
+  .form-hijo {
+    position: relative;
     margin: auto;
+    margin-top: 100px;
+    position: relative;
     width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgb(150, 146, 146);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgb(0, 0, 0);
   }
 }/*# sourceMappingURL=style.css.map */

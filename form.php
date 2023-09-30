@@ -1,27 +1,35 @@
-<7php
+<?php
 
-$nombre = $_POST[' name' ];
-$mail = $_POST[' mail' ];
-$mensaje = $_POST[' textarea' ];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Define las variables
+    $destinatario = 'josue.c1095@gmail.com';
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $telefono = $_POST['telefono'];
+    $asunto = $_POST['asunto'];
+    $mensaje = $_POST['mensaje'];
 
-// como me va a llegar el cuerpo del mail a mi
+    // Crea el mensaje de correo electrónico
+    $contenido = 'Nombre: ' . $nombre . "\r\n";
+    $contenido .= 'Email: ' . $email . "\r\n";
+    $contenido .= 'Teléfono: ' . $telefono . "\r\n";
+    $contenido .= 'Asunto: ' . $asunto . "\r\n";
+    $contenido .= 'Mensaje: ' . $mensaje;
 
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es:" .$mail . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
-$mensaje .= "Enviado el  " . date('d/m/Y' , time());
+   
+     // Formateo el mensaje a UTF-8 para los campos con tildes
+     $headers = 'MIME-Version: 1.0' . "\r\n";
+     $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n"; 
+    
+    if (mail($destinatario, $asunto, $contenido, $headers)) {
+        // Redirige al usuario después de enviar el formulario (puedes personalizar la URL de redirección)
+        header('Location: enviado.html');
+        exit;
+    } else {
+        // Captura el error
+        $error = error_get_last();
+        echo "Error en el envío de correo: " . $error['message'];
+    }
+}
 
-$para = 'josue.c1095@gmail.com' ;
-$asunto = 'Este mail fue enviado desde el sitio web'
-
-
-// funcion mail
-// a quien le mando el mail
-
-mail($para, $asunto, utf8_decode($mensaje), $header);
-
-
-// redireccion al haber enviado el form
-
-header('Location:exito.html');
 ?>
