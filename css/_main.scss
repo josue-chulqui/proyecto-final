@@ -33,13 +33,12 @@ h1{
       
         .img-josue{
           width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
           
         }
-    .img-josue img{
-      width: 20rem;
-      border-radius: 10px;
-      padding-left: 5rem;
-      }
+    
     .main-precio{
       display: flex;
       flex-direction: column;
